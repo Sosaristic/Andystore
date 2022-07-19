@@ -6,6 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { ButtonStyled } from "../components/styles/Button.styled";
 import { LoginStyled } from "../components/styles/Login.styled";
 import { Link } from "react-router-dom";
+import {app} from '../components/firebase-config'
 import {
   getAuth,
   signInWithEmailAndPassword,

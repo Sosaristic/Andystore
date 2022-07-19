@@ -4,6 +4,7 @@ import { LoginStyled } from "../components/styles/Login.styled";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
+import {app} from '../components/firebase-config'
 
 import {
   getAuth,
