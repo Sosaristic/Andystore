@@ -2,7 +2,7 @@
   "name": "andy-store",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https//sosaristic.github.io",
+  "homepage": "https//sosaristic.github.io/andystore",
   "dependencies": {
     "-": "^0.0.1",
     "@emotion/react": "^11.9.3",
