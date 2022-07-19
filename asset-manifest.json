@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/https//sosaristic.github.io/static/css/main.039bf95e.css",
+    "main.js": "/https//sosaristic.github.io/static/js/main.6fcd780d.js",
+    "static/js/787.4ff27fc9.chunk.js": "/https//sosaristic.github.io/static/js/787.4ff27fc9.chunk.js",
+    "static/media/mens.jpg": "/https//sosaristic.github.io/static/media/mens.2bc1a6404930a1add9a6.jpg",
+    "static/media/cart2.svg": "/https//sosaristic.github.io/static/media/cart2.af074a6a20197c7ac2bea57007f92e51.svg",
+    "static/media/jewelry.jpg": "/https//sosaristic.github.io/static/media/jewelry.a1ea72417a574508528c.jpg",
+    "static/media/womens.jpg": "/https//sosaristic.github.io/static/media/womens.a2b2f0428b4473b4d9ea.jpg",
+    "static/media/boy.png": "/https//sosaristic.github.io/static/media/boy.18450dd57d448ee628e6.png",
+    "static/media/electronics.jpg": "/https//sosaristic.github.io/static/media/electronics.90ab1604c4fd47c62a9a.jpg",
+    "index.html": "/https//sosaristic.github.io/index.html",
+    "main.039bf95e.css.map": "/https//sosaristic.github.io/static/css/main.039bf95e.css.map",
+    "main.6fcd780d.js.map": "/https//sosaristic.github.io/static/js/main.6fcd780d.js.map",
+    "787.4ff27fc9.chunk.js.map": "/https//sosaristic.github.io/static/js/787.4ff27fc9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.039bf95e.css",
+    "static/js/main.6fcd780d.js"
+  ]
+}
