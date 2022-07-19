@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 
 import GlobalStyles from "./components/styles/Global";
@@ -70,6 +70,7 @@ function App() {
                   id={itemId}
                 />
               )}
+              
 
               <Routes>
                 <Route
@@ -96,9 +97,6 @@ function App() {
                 <Route exact path={`/categories/women/products/:id`} element={<Description />} />
                 <Route exact path="/categories/jewelries" element={<Jewelries />} />
                 <Route exact path={`/categories/jewelries/products/:id`} element={<Description />} />
-
-
-
 
               </Routes>
             </Container>
