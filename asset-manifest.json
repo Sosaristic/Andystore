@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "./static/css/main.039bf95e.css",
-    "main.js": "./static/js/main.1319cc00.js",
-    "static/js/787.4ff27fc9.chunk.js": "./static/js/787.4ff27fc9.chunk.js",
-    "static/media/mens.jpg": "./static/media/mens.2bc1a6404930a1add9a6.jpg",
-    "static/media/cart2.svg": "./static/media/cart2.af074a6a20197c7ac2bea57007f92e51.svg",
-    "static/media/jewelry.jpg": "./static/media/jewelry.a1ea72417a574508528c.jpg",
-    "static/media/womens.jpg": "./static/media/womens.a2b2f0428b4473b4d9ea.jpg",
-    "static/media/boy.png": "./static/media/boy.18450dd57d448ee628e6.png",
-    "static/media/electronics.jpg": "./static/media/electronics.90ab1604c4fd47c62a9a.jpg",
-    "index.html": "./index.html",
-    "main.039bf95e.css.map": "./static/css/main.039bf95e.css.map",
-    "main.1319cc00.js.map": "./static/js/main.1319cc00.js.map",
-    "787.4ff27fc9.chunk.js.map": "./static/js/787.4ff27fc9.chunk.js.map"
+    "main.css": "/andystore/static/css/main.039bf95e.css",
+    "main.js": "/andystore/static/js/main.5a53a49f.js",
+    "static/js/787.4ff27fc9.chunk.js": "/andystore/static/js/787.4ff27fc9.chunk.js",
+    "static/media/mens.jpg": "/andystore/static/media/mens.2bc1a6404930a1add9a6.jpg",
+    "static/media/cart2.svg": "/andystore/static/media/cart2.af074a6a20197c7ac2bea57007f92e51.svg",
+    "static/media/jewelry.jpg": "/andystore/static/media/jewelry.a1ea72417a574508528c.jpg",
+    "static/media/womens.jpg": "/andystore/static/media/womens.a2b2f0428b4473b4d9ea.jpg",
+    "static/media/boy.png": "/andystore/static/media/boy.18450dd57d448ee628e6.png",
+    "static/media/electronics.jpg": "/andystore/static/media/electronics.90ab1604c4fd47c62a9a.jpg",
+    "index.html": "/andystore/index.html",
+    "main.039bf95e.css.map": "/andystore/static/css/main.039bf95e.css.map",
+    "main.5a53a49f.js.map": "/andystore/static/js/main.5a53a49f.js.map",
+    "787.4ff27fc9.chunk.js.map": "/andystore/static/js/787.4ff27fc9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.039bf95e.css",
-    "static/js/main.1319cc00.js"
+    "static/js/main.5a53a49f.js"
   ]
 }
