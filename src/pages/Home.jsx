@@ -61,7 +61,7 @@ export default function Home(props) {
     
    <Container position="relative" display="flex" direction="column">
       <ItemsContainer>
-        {items.length === 0 && <div className="not-found">No items found</div>}
+        {items.length === 0 && <div className="not-found">fetching data please wait...</div>}
        
         {slicedItems.map((item) => {
           return (
