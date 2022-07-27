@@ -8,6 +8,7 @@ export const ItemCardStyled = styled.div`
   border-radius: 8px;
   font-size: 3.5vw;
   padding: 8px;
+  align-self: baseline;
   @media(min-width: 992px){
     width: 23%;
     font-size: small;
