@@ -15,6 +15,7 @@ export const Container = styled.div`
   align-items: ${({ alignItems }) => alignItems};
   width: ${({ width }) => width || "auto"};
   min-height: ${({ minHeight }) => minHeight};
+  min-width: ${({minWidth})=> minWidth};
   height: ${({ height }) => height || "auto"};
   text-align: ${({ textAlign }) => textAlign};
   border-radius: ${({ radius }) => radius};

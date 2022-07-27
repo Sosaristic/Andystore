@@ -77,6 +77,7 @@ export default function SignUp(props) {
             name="password"
             value={values.password}
             onInput={handleInput}
+            minLength={9}
           />
 
           <ButtonStyled

@@ -6,9 +6,12 @@ export const DescriptionStyled = styled(Container)`
   padding: 4px 8px;
   background-color: white;
   margin: 0 auto;
+  cursor: default;
+   @media (min-width: 992px) {
+    width: 70%;
+  }
 
   h3 {
-    word-break: break;
     margin-top: 0.5rem;
   }
   h2 {
@@ -16,11 +19,11 @@ export const DescriptionStyled = styled(Container)`
     margin-top: 1.5rem;
   }
   .image {
-    width: 60vw;
+    width: 40vw;
     height: 20%;
-    @media(min-width: 992px){
+    @media (min-width: 992px) {
       height: 14rem;
-      width: 40%;
+      width: 30%;
     }
   }
   .rating {
@@ -48,13 +51,22 @@ export const DescriptionStyled = styled(Container)`
     border-bottom: 2px solid green;
   }
   .description {
-    width: 70vw;
+    width: 100%;
     padding: 4px 0;
     color: DarkGray;
     font-weight: bold;
+    word-wrap: break-word;
   }
-  .items-amount{
+  .items-amount {
     color: black;
     font-size: 4vw;
+    @media(min-width: 992px){
+      font-size: 2rem;
+    }
+  }
+  .buttons{
+    @media(min-width: 992px){
+      font-size: 2rem;
+    }
   }
 `;

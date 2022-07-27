@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { cartActions } from "../Redux/CartSlice";
@@ -14,6 +14,10 @@ import { Container } from "./styles/Container.styled";
 import { ButtonStyled } from "./styles/Button.styled";
 
 function Description(props) {
+useCallback(()=>{
+  window.scrollTo(0, 0)
+}, [])
+
   const dispatch = useDispatch();
   const { id } = useParams();
   const myId = +id;
@@ -95,6 +99,7 @@ function Description(props) {
               radius="4px"
               onClick={handleDecrease}
               disabled={itemQty < 2}
+              className="buttons"
             >
               <CgMathMinus />
             </ButtonStyled>
@@ -108,6 +113,8 @@ function Description(props) {
               border="none"
               radius="4px"
               onClick={handleIncrease}
+              className="buttons"
+
             >
               <MdAdd />
             </ButtonStyled>

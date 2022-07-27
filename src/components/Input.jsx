@@ -25,6 +25,7 @@ export default function Input(props) {
             required
             title={props.title}
             name={props.inputName}
+            minLength={props.minLength}
           />
         </InputStyled>
       

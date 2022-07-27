@@ -81,6 +81,7 @@ export default function Login() {
             name="password"
             value={values.password}
             onInput={handleInput}
+            minLength={9}
           />
 
           <ButtonStyled

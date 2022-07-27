@@ -7,6 +7,7 @@ export const StyledCategoriesCard = styled.div`
   width: 100%;
   height: 3rem;
   margin: 1rem 0;
+  cursor: default;
   
   color: gray;
 

@@ -16,7 +16,7 @@ padding: 6px 8px;
 @media(min-width: 992px){
   position: relative;
   left: 0;
-  width: 25%;
+  max-width: 15%;
   min-height: 100%;
   z-index: 0;
 
@@ -29,7 +29,8 @@ height: 100vh;
 background-color: white;
 padding: 1rem 1.5rem;
 @media(min-width: 768px){
-  width: 45%;
+  width: 100%;
+  padding: 4px 6px;
 }
 
 .left-icon{
@@ -70,6 +71,10 @@ h4 {
   font-size: large;
   font-weight: bold;
   color: gray;
+  @media(min-width: 768px){
+    width: 80%;
+   
+  }
 }
 .favorite > span{
   position: relative;

@@ -4,6 +4,11 @@ export const PaymentStyled = styled.div`
 position: relative;
 padding: 1rem 3rem;
 background-color: white;
+margin: 0 auto;
+
+@media(min-width: 992px){
+    width: 80%;
+}
 h4{
     font-weight: bold;
     color: black;
@@ -19,9 +24,11 @@ h3{
 .items-container{
     position: relative;
     display: flex;
+    align-items: center;
+
     margin-top: 1rem;
     min-width: 100%;
-    height: 6rem;
+    height: 7rem;
     overflow-x: auto;
   
 }
@@ -39,6 +46,7 @@ h3{
 
 .image-container, .description{
     position: relative;
+    height: 90%;
     width: 45%;
 }
 .description{

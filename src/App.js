@@ -1,6 +1,11 @@
 import React, { useRef } from "react";
 import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 
 import GlobalStyles from "./components/styles/Global";
@@ -26,9 +31,9 @@ import Electronics from "./pages/Electronics";
 import Mens from "./components/Mens";
 import Womens from "./components/Womens";
 import Jewelries from "./components/Jewelries";
+import { RoutesContainer } from "./components/styles/OverallContainer.styled";
 
 function App() {
-  
   const [displaySideBar, setDisplaySideBar] = useState(true);
   const [displayProfile, setDisplayProfile] = useState(false);
   const [dialog, setDialog] = useState(false);
@@ -43,35 +48,34 @@ function App() {
   const handleDialogOptions = () => {};
 
   return (
-    
-      <>
-        <ThemeProvider theme={MyTheme}>
-          <GlobalStyles />
-          <Container position={"relative"}>
-            <ToastContainer hideProgressBar={true} autoClose={2000} />
-            <Header
+    <>
+      <ThemeProvider theme={MyTheme}>
+        <GlobalStyles />
+        <Container position={"relative"}>
+          <ToastContainer hideProgressBar={true} autoClose={2000} />
+          <Header
+            handleDisplaySideBar={handleDisplaySideBar}
+            handleDisplayProfile={handleDisplayProfile}
+          />
+
+          <Profile
+            displayProfile={displayProfile}
+            handleDisplayProfile={handleDisplayProfile}
+          />
+          <Container display="flex">
+            <SideNav
+              displaySideBar={displaySideBar}
               handleDisplaySideBar={handleDisplaySideBar}
-              handleDisplayProfile={handleDisplayProfile}
             />
-
-            <Profile
-              displayProfile={displayProfile}
-              handleDisplayProfile={handleDisplayProfile}
-            />
-            <Container display="flex">
-              <SideNav
-                displaySideBar={displaySideBar}
-                handleDisplaySideBar={handleDisplaySideBar}
+            {dialog && (
+              <Dialog
+                handleDialog={handleDialog}
+                handleDialogOptions={handleDialogOptions}
+                id={itemId}
               />
-              {dialog && (
-                <Dialog
-                  handleDialog={handleDialog}
-                  handleDialogOptions={handleDialogOptions}
-                  id={itemId}
-                />
-              )}
-              
+            )}
 
+            <RoutesContainer>
               <Routes>
                 <Route
                   exact
@@ -89,23 +93,46 @@ function App() {
                 <Route exact path="/checkout/success" element={<Success />} />
                 <Route exact path="/login" element={<Login />} />
                 <Route exact path="/signUp" element={<SignUp />} />
-                <Route exact path="/categories/electronics" element={<Electronics />} />
-                <Route exact path={`/categories/electronics/products/:id`} element={<Description />} />
+                <Route
+                  exact
+                  path="/categories/electronics"
+                  element={<Electronics />}
+                />
+                <Route
+                  exact
+                  path={`/categories/electronics/products/:id`}
+                  element={<Description />}
+                />
                 <Route exact path="/categories/mens" element={<Mens />} />
-                <Route exact path={`/categories/mens/products/:id`} element={<Description />} />
+                <Route
+                  exact
+                  path={`/categories/mens/products/:id`}
+                  element={<Description />}
+                />
                 <Route exact path="/categories/women" element={<Womens />} />
-                <Route exact path={`/categories/women/products/:id`} element={<Description />} />
-                <Route exact path="/categories/jewelries" element={<Jewelries />} />
-                <Route exact path={`/categories/jewelries/products/:id`} element={<Description />} />
-
+                <Route
+                  exact
+                  path={`/categories/women/products/:id`}
+                  element={<Description />}
+                />
+                <Route
+                  exact
+                  path="/categories/jewelries"
+                  element={<Jewelries />}
+                />
+                <Route
+                  exact
+                  path={`/categories/jewelries/products/:id`}
+                  element={<Description />}
+                />
               </Routes>
-            </Container>
-
-            <About />
+              </RoutesContainer>
           </Container>
-        </ThemeProvider>
-      </>
 
+          <About />
+        </Container>
+      </ThemeProvider>
+    </>
   );
 }
 

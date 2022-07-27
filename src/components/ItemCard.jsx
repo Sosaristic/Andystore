@@ -2,7 +2,7 @@ import React from "react";
 
 import { useDispatch } from "react-redux";
 import { itemsActions } from "../Redux/ItemsSlice";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import Rating from "./Rating";
 import { ItemCardStyled } from "./styles/ItemCard.styled";
@@ -13,7 +13,7 @@ import { ButtonStyled } from "./styles/Button.styled";
 import NairaIcon from "./NairaIcon";
 
 export default function ItemCard(props) {
- 
+ const navigate = useNavigate()
   
   const dispatch = useDispatch();
 
@@ -26,17 +26,18 @@ export default function ItemCard(props) {
 
     dispatch(itemsActions.toogleFavorite({ itemId, favorite }));
   };
+  const handleNavigate = ()=> navigate(`/products/${itemId}`)
 
   return (
     <>
-      <ItemCardStyled>
+      <ItemCardStyled onClick={handleNavigate}>
         <Container display="flex" direction="column">
-          <Link to={`/products/${itemId}`}>
+       
             {" "}
             <div className="item-image">
               <img className="image" src={props.image} alt="" />
             </div>
-          </Link>
+         
           <div className="item-title">{props.title}</div>
           <Container
             display="flex"
