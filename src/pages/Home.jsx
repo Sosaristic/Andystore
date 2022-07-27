@@ -11,6 +11,7 @@ import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import { itemsActions } from "../Redux/ItemsSlice";
 import { ButtonStyled } from "../components/styles/Button.styled";
+import { Container } from "../components/styles/Container.styled";
 
 //const baseURL = "https://fakestoreapi.com/products?limit=8";
 
@@ -58,7 +59,7 @@ export default function Home(props) {
   return (
     <>
     
-   
+   <Container position="relative" display="flex" direction="column">
       <ItemsContainer>
         {items.length === 0 && <div className="not-found">No items found</div>}
        
@@ -77,17 +78,20 @@ export default function Home(props) {
           );
         })}
 
-       { slicedItems.length > 0 && slicedItems.length < 20 &&<ButtonStyled
+      
+      </ItemsContainer>
+      { slicedItems.length > 0 && slicedItems.length < 20 &&<ButtonStyled
           margin="1rem auto"
           background={({ theme }) => theme.colors.primary}
           border="none"
           color="white"
           padding="8px 10px"
+
           onClick={handleCount}
         >
           <MdAdd /> More
         </ButtonStyled>}
-      </ItemsContainer>
+      </Container>
      
     </>
   );

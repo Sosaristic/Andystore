@@ -5,6 +5,7 @@ export const ItemsContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
+  padding: 7px;
   
   background-color: #f5f0f0;
   @media(min-width: 992px){
